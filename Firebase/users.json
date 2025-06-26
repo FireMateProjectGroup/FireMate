@@ -1,0 +1,27 @@
+[
+  {
+    "full_name": "Bonse Nzakame",
+    "email": "bonse.reporter@gmail.com",
+    "phone": "+233501234567",
+    "location": "Kumasi, Ghana",
+    "photo_url": "https://i.imgur.com/Qd0RZyB.png",
+    "role": "reporter"
+  },
+  {
+    "full_name": "Kelvin Amponsah",
+    "email": "kelvin.operator@gmail.com",
+    "phone": "+233502345678",
+    "location": "Koforidua, Ghana",
+    "photo_url": "https://i.imgur.com/Qd0RZyB.png",
+    "role": "operator",
+    "is_on_duty": true
+  },
+  {
+    "full_name": "Runny Eliel",
+    "email": "runny.admin@firemate.com",
+    "phone": "+233507654321",
+    "location": "HQ - Accra",
+    "photo_url": "https://i.imgur.com/Qd0RZyB.png",
+    "role": "admin"
+  }
+]

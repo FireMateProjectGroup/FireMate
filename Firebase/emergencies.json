@@ -1,0 +1,21 @@
+[
+  {
+    "description": "Smoke and flames spotted at market square",
+    "location": "Kejetia Market, Kumasi",
+    "reporter_email": "bonse.reporter@gmail.com",
+    "media_url": "https://i.imgur.com/H45MjqX.jpg",
+    "status": "pending",
+    "urgency": "high",
+    "timestamp": null
+  },
+  {
+    "description": "Gas cylinder explosion behind hostel",
+    "location": "KNUST Hall 7, Kumasi",
+    "reporter_email": "bonse.reporter@gmail.com",
+    "media_url": "https://i.imgur.com/tEQY83K.jpg",
+    "status": "verified",
+    "urgency": "critical",
+    "timestamp": null
+  }
+]
+
