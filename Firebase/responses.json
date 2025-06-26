@@ -1,0 +1,17 @@
+[
+  {
+    "emergency_description": "Smoke and flames spotted at market square",
+    "operator_email": "kelvin.operator@gmail.com",
+    "arrival_time": null,
+    "notes": "Minor fire, quickly controlled",
+    "status": "resolved"
+  },
+  {
+    "emergency_description": "Gas cylinder explosion behind hostel",
+    "operator_email": "kelvin.operator@gmail.com",
+    "arrival_time": null,
+    "notes": "Explosion contained, one minor injury treated",
+    "status": "resolved"
+  }
+]
+
