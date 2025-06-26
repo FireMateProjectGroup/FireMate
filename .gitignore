@@ -1,3 +1,4 @@
+ HEAD
 .env
 
 # Python
@@ -30,3 +31,21 @@ db.sqlite3-journal
 # Project specific
 media/
 static/
+
+# Ignore Firebase service account key
+serviceAccountKey.json
+
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+
+# Ignore env files
+.env
+
+# If you ever add Node.js
+node_modules/
+
+# Logs and OS files
+*.log
+.DS_Store
+ master
