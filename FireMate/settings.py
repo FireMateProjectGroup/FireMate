@@ -134,12 +134,16 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'firemateApp.User'
 
 # Rest Framework settings
+# Authentication settings for Django REST Framework
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
+        # Firebase Authentication (custom class )
+        'firemateApp.firebase_auth.FirebaseAuthentication',
+        # Optional: Keep JWT if to be used alongside Firebase
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ),
     'DEFAULT_PERMISSION_CLASSES': (
-        'rest_framework.permissions.IsAuthenticated',
+        'rest_framework.permissions.IsAuthenticated',  # Require authentication by default
     ),
     'DEFAULT_PARSER_CLASSES': [
         'rest_framework.parsers.JSONParser',
@@ -147,6 +151,7 @@ REST_FRAMEWORK = {
         'rest_framework.parsers.MultiPartParser',
     ],
 }
+
 
 # CORS settings
 CORS_ALLOW_ALL_ORIGINS = True  # Only for development
