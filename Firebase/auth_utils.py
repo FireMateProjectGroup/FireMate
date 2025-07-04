@@ -35,26 +35,40 @@ def get_user_by_email(email):
     except Exception as e:
         print(' Error fetching user:', e)
         return None
-
-#  Delete a user (by email or UID)
+# Delete a user (by email or UID)
 def delete_user(identifier):
     """
-    Deletes a Firebase user by UID or email.
+    Deletes a Firebase user using UID or email.
+    Handles email users, phone users, and anonymous users.
+
+    Args:
+        identifier (str): Firebase UID or email address.
+
+    Returns:
+        bool: True if deleted successfully, False otherwise.
     """
     try:
-        # If it's an email, fetch the UID first
-        uid = identifier
+        # If identifier contains "@", treat it as an email
         if "@" in identifier:
             user = auth.get_user_by_email(identifier)
             uid = user.uid
+        else:
+            # Otherwise, treat it as UID
+            uid = identifier
+            # Validate if UID exists
+            user = auth.get_user(uid)
+
         auth.delete_user(uid)
         print(f" Successfully deleted user with UID: {uid}")
         return True
+
     except auth.UserNotFoundError:
-        print(" User not found.")
+        print(" Error: User not found. Please provide a valid UID or email.")
     except Exception as e:
         print(" Error deleting user:", e)
+
     return False
+
 
 #  Update user data
 def update_user(uid, email=None, password=None, display_name=None):
